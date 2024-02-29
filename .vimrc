@@ -1,6 +1,9 @@
 set nocompatible              " required
 filetype off                  " required
 set encoding=utf-8
+" set nu
+set tags=~/.mytags/tags
+
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -18,7 +21,8 @@ Plugin 'vim-scripts/indentpython.vim'
 Bundle 'Valloric/YouCompleteMe'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
-
+Plugin 'tpope/vim-fugitive'
+"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 " ...
 
 " All of your Plugins must be added before the following line
@@ -88,6 +92,7 @@ let python_highlight_all=1
 syntax on
 "----
 
-
+"--- make backspaces more powerfull
+set backspace=indent,eol,start
 
 
