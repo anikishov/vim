@@ -18,4 +18,5 @@ mkdir ~/.mytags && touch ~/.mytags/tags
 ctags -R --languages=python --exclude=*.pyc -f ~/.mytags/tags ~/path/to/python/project*
 ```
 
-
+# TO-DO:
+Need try to check that plugin https://github.com/vim-scripts/easytags.vim
