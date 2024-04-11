@@ -3,7 +3,7 @@ filetype off                  " required
 set encoding=utf-8
 " set nu
 set tags=~/.mytags/tags
-
+set mouse=a
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -46,7 +46,7 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 "
 " ----- Folding
 " Enable folding
-set foldmethod=indent
+autocmd FileType python set foldmethod=indent
 set foldlevel=99
 " Enable folding with the spacebar
 nnoremap <space> za
@@ -69,7 +69,7 @@ au BufNewFile,BufRead *.py
     \ set autoindent |
     \ set fileformat=unix
 
-au BufNewFile,BufRead *.js,*.html,*.css,*.vue
+au BufNewFile,BufRead *.js,*.html,*.css,*.vue,*.yaml,*.yml
     \ set tabstop=2 |
     \ set softtabstop=2 |
     \ set shiftwidth=2
