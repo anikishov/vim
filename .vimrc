@@ -48,6 +48,10 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " Enable folding
 autocmd FileType python set foldmethod=indent
 set foldlevel=99
+"Get the 2-space YAML as the default when hit carriage return after the colon
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType yml setlocal ts=2 sts=2 sw=2 expandtab
+
 " Enable folding with the spacebar
 nnoremap <space> za
 

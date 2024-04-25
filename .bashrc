@@ -144,4 +144,3 @@ fi
 
 # scrooling in less
 [[ "${LESS}" != *--mouse* ]] && export LESS="${LESS} --mouse"
-[[ "${LESS}" != *--mouse* ]] && export LESS="${LESS} --mouse"
